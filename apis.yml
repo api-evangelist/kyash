@@ -1,27 +1,103 @@
 aid: kyash
 name: Kyash
-description: 'Kyash is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Financial Services. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Kyash Inc. (株式会社Kyash) is a Tokyo-based fintech founded in 2015 that operates a
+  consumer mobile wallet and Visa prepaid card in Japan, covering charging, peer-to-peer
+  transfers, shared accounts, buy-now-pay-later, personal finance management, and
+  contactless payment through Apple Pay, Google Pay, and Samsung Pay. Kyash is a
+  registered Funds Transfer Service Provider (Kanto Local Finance Bureau No. 00082) and
+  a third-party Prepaid Payment Instrument Issuer (No. 00698), and is ISO/IEC 27001:2022,
+  PCI DSS, and TRUSTe certified. Its business-facing product is Kyash Payout, a mass
+  payout service that sends funds to Japanese domestic bank accounts or Kyash wallets at
+  a flat 50 yen per transfer, integrated either by Zengin/CSV file upload or by direct
+  API integration including a balance API. Kyash previously sold Kyash Direct, an
+  API-based Visa card issuer processing platform launched in 2019. All API access is
+  sales-gated: Kyash publishes no developer portal, API reference, specification, SDK,
+  or sandbox.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/5db15c3bca3871afff172c17/5e999e9506f3ea01ffabcdbb_kyash_logo_symbol_blue.png
 url: https://raw.githubusercontent.com/api-evangelist/kyash/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
-- partech
-x-tier: stub
-x-tier-reason: portfolio-lead
+  - partech
+x-tier: profiled
+x-tier-reason: enriched-no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-25'
 tags:
-- Company
-- Financial Services
+  - Company
+  - Financial Services
+  - Payments
+  - Fintech
+  - Digital Wallet
+  - Prepaid Cards
+  - Money Transfer
+  - Payouts
+  - Japan
+  - Visa
 apis: []
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
-- FN: APIs.json
-  email: info@apis.io
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+  - FN: APIs.json
+    email: info@apis.io
 common:
-- type: Website
-  url: https://kyash.co/
+  - type: Website
+    url: https://kyash.co/
+  - type: Blog
+    url: https://blog.kyash.co/
+  - type: BlogRSS
+    url: https://blog.kyash.co/feed
+  - type: Support
+    url: https://help.kyash.co/
+  - type: HelpCenter
+    url: https://help.kyash.co/
+  - type: GitHubOrganization
+    url: https://github.com/Kyash
+  - type: Pricing
+    url: https://kyash.co/biz/payout
+  - type: SignUp
+    url: https://kyash.co/biz/payout/inquiry
+  - type: TermsOfService
+    url: https://kyash.co/legal/terms
+  - type: PrivacyPolicy
+    url: https://kyash.co/legal/policy/privacy
+  - type: Compliance
+    url: https://kyash.co/legal/policy/security
+  - type: TrustCenter
+    url: security/kyash-trust-center.yml
+  - type: DomainSecurity
+    url: security/kyash-domain-security.yml
+  - type: Lifecycle
+    url: lifecycle/kyash-lifecycle.yml
+  - type: StatusPage
+    url: https://kyash.co/news/maintenance
+  - type: Packages
+    url: packages/kyash-packages.yml
+  - type: LLMsTxt
+    url: llms/kyash-llms.txt
+  - type: News
+    url: https://kyash.co/news/press-release
+  - type: Company
+    url: https://kyash.co/company
+  - type: Careers
+    url: https://kyash.co/recruit
+  - type: ContactUs
+    url: https://kyash.co/contact
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
