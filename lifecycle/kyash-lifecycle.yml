@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+source: https://kyash.co/news/maintenance
+summary: >-
+  Kyash operates no public developer platform, so there is no published API
+  versioning or deprecation policy. Operational transparency is delivered through
+  dated service notices on the corporate site: a scheduled/emergency maintenance
+  feed, a service information feed, and press releases. These are the closest
+  equivalent to a status page and are actively updated (multiple entries in July
+  2026). Any API lifecycle terms for the B2B Payout service are set contractually
+  during sales onboarding and are not published.
+versioning:
+  scheme: unpublished
+  current: null
+  docs: null
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: no published deprecation policy or RFC 8594 Sunset/Deprecation header support
+sla:
+  url: null
+  uptime_target: null
+  note: >-
+    No public SLA. The Payout service page advertises 24/7 availability of
+    transfers but publishes no uptime commitment.
+status_page: https://kyash.co/news/maintenance
+status_channels:
+- name: Maintenance notices (メンテナンス情報)
+  url: https://kyash.co/news/maintenance
+  kind: maintenance
+- name: Service information (お知らせ)
+  url: https://kyash.co/news/information
+  kind: incidents-and-announcements
+- name: Press releases
+  url: https://kyash.co/news/press-release
+  kind: announcements
+- name: Help center
+  url: https://help.kyash.co/
+  kind: support
+deprecated_operations: []

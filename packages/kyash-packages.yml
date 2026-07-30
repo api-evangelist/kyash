@@ -1,0 +1,70 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Kyash
+summary: >-
+  Kyash publishes no API client libraries. Its API surface (the B2B Payout
+  service) is sales-gated with no public specification, so no first-party or
+  community SDK exists on npm, PyPI, Maven Central, NuGet, RubyGems, Packagist,
+  or crates.io. The Kyash GitHub organization does publish first-party
+  general-purpose open source — a Zengin bank-transfer format library, a Go retry
+  helper, a GitHub configuration linter, and several Android/iOS UI components —
+  which are catalogued below as official packages but are explicitly NOT clients
+  for any Kyash API.
+api_client_packages: []
+api_client_note: >-
+  No SDKs pointer is emitted for this provider: nothing here calls a Kyash API.
+packages:
+- language: go
+  registry: go-modules
+  name: github.com/Kyash/zengin-go
+  url: https://pkg.go.dev/github.com/Kyash/zengin-go
+  repository: https://github.com/Kyash/zengin-go
+  install: go get github.com/Kyash/zengin-go
+  description: Library for the Japanese Zengin (全銀) bank-transfer file format.
+  official: true
+  api_client: false
+- language: go
+  registry: go-modules
+  name: github.com/Kyash/async-retry
+  url: https://pkg.go.dev/github.com/Kyash/async-retry
+  repository: https://github.com/Kyash/async-retry
+  install: go get github.com/Kyash/async-retry
+  description: Asynchronous retry control with graceful shutdown.
+  official: true
+  api_client: false
+- language: shell
+  registry: github
+  name: ghlint
+  url: https://github.com/Kyash/ghlint
+  repository: https://github.com/Kyash/ghlint
+  install: null
+  description: Detects configuration problems in GitHub organization/repository settings.
+  official: true
+  api_client: false
+- language: kotlin
+  registry: github
+  name: validatable-textinput-layout
+  url: https://github.com/Kyash/validatable-textinput-layout
+  repository: https://github.com/Kyash/validatable-textinput-layout
+  install: null
+  description: Android TextInputLayout with reactive validation.
+  official: true
+  api_client: false
+- language: java
+  registry: github
+  name: StickyHeaders
+  url: https://github.com/Kyash/StickyHeaders
+  repository: https://github.com/Kyash/StickyHeaders
+  install: null
+  description: RecyclerView adapter supporting sticky headers.
+  official: true
+  api_client: false
+registries_probed:
+- {registry: npm, result: no first-party Kyash API client}
+- {registry: pypi, result: no first-party Kyash API client}
+- {registry: maven-central, result: no first-party Kyash API client}
+- {registry: nuget, result: no first-party Kyash API client}
+- {registry: rubygems, result: no first-party Kyash API client}
+- {registry: packagist, result: no first-party Kyash API client}
+- {registry: crates.io, result: no first-party Kyash API client}
+- {registry: go-modules, result: two first-party utility modules, neither an API client}

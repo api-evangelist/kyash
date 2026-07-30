@@ -1,0 +1,53 @@
+generated: '2026-07-19'
+method: searched
+source: https://kyash.co/legal/policy/security
+url: https://kyash.co/legal/policy/security
+summary: >-
+  Kyash Inc. publishes an information security policy and displays named
+  third-party certifications on both its security policy page and its corporate
+  profile. There is no dedicated trust-center portal (trust.kyash.co and
+  security.kyash.co do not resolve) and no machine-readable compliance surface;
+  the posture is published as static corporate pages in Japanese.
+certifications:
+- name: ISO/IEC 27001:2022
+  scheme: ISMS
+  identifier: ICMS-SR0221
+  valid_through: '2029-03-16'
+  source: https://kyash.co/company
+- name: PCI DSS
+  scheme: PCI Security Standards Council
+  identifier: null
+  source: https://kyash.co/legal/policy/security
+- name: TRUSTe
+  scheme: privacy certification
+  identifier: null
+  source: https://kyash.co/company
+regulatory_registrations:
+- name: 資金移動業者 (Funds Transfer Service Provider)
+  authority: Kanto Local Finance Bureau (関東財務局長)
+  number: '00082'
+  source: https://kyash.co/company
+- name: 前払式支払手段（第三者型）発行者 (Prepaid Payment Instrument Issuer, third-party type)
+  authority: Kanto Local Finance Bureau (関東財務局長)
+  number: '00698'
+  source: https://kyash.co/company
+policy_pages:
+- title: Information Security Policy
+  url: https://kyash.co/legal/policy/security
+  last_updated: '2025-03-14'
+- title: Information Security Policy (English)
+  url: https://kyash.co/legal/policy/security-en
+- title: Privacy Policy
+  url: https://kyash.co/legal/policy/privacy
+- title: User Protection Policy
+  url: https://kyash.co/legal/policy/userprotection
+evidence:
+- source: https://kyash.co/legal/policy/security
+  keywords: [PCI DSS, ISMS, TRUSTe, information security policy, internal audit]
+- source: https://kyash.co/company
+  keywords: [ISO/IEC 27001:2022, PCI DSS, funds transfer service provider]
+gaps:
+- No vulnerability disclosure / responsible disclosure program published
+- No security contact address or /.well-known/security.txt
+- No bug bounty program (no HackerOne / Bugcrowd / Intigriti listing found)
+- No SOC 2 report referenced

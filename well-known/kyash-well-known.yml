@@ -1,0 +1,31 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of https://kyash.co/.well-known/*
+host: https://kyash.co
+summary:
+  probed: 6
+  found: 0
+  note: >-
+    Kyash publishes no /.well-known/ discovery surface on its primary web host.
+    No security.txt (RFC 9116), no OIDC/OAuth authorization-server metadata, no
+    RFC 9727 api-catalog, no ai-plugin manifest. Recorded absence is real probe
+    data, not a gap in harvesting. Kyash operates no public API host, so there is
+    no secondary origin to probe.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /robots.txt
+  status: 200
+  note: present but not a discovery document; only /app/ and /redirect/ disallowed
