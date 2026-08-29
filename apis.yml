@@ -14,6 +14,17 @@ description: >-
   API-based Visa card issuer processing platform launched in 2019. All API access is
   sales-gated: Kyash publishes no developer portal, API reference, specification, SDK,
   or sandbox.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
