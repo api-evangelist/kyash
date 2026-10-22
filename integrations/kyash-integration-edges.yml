@@ -38,16 +38,81 @@ edges:
     detected: '2026-10-18'
   detected_by: sweep-official-sdks.py
   first_seen: '2026-10-18'
+- partner_name: Japan FSA registered Funds Transfer Service Providers
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.fsa.go.jp/menkyo/menkyoj/shikin_idou.pdf
+  category: Japanese funds transfer registration (Payment Services Act)
+  contract_reference:
+    register: Japan FSA registered Funds Transfer Service Providers
+    spec_file: null
+    standard: null
+    role: licensed-participant
+    registrations:
+    - registered_name: 株式会社Ｋｙａｓｈ
+      register_id: 関東財務局長 第00082号
+      corporate_number: '9011001103831'
+      register_country: JP
+      matched_domain: kyash.co
+      matched_by: domain
+      en_name: Kyash
+      licences:
+      - type 2
+      identity: wikidata Q65229231 'Kyash' P3225 9011001103831 (the register's corporate number) P856 https://kyash.co
+    signal_note: 'participation only: a Financial Services Agency registration; no API conformance is published
+      by this register'
+    detected_by: sweep-japan-fsa-registered-fintech.py
+    detected: '2026-10-21'
+    identity_source: wikidata P3225 (the register's Japanese corporate number) -> P856 (labelled provenance step;
+      Kin 2026-10-15 decision 1)
+  detected_by: sweep-japan-fsa-registered-fintech.py
+  first_seen: '2026-10-21'
+- partner_name: Japan FSA registered Prepaid Payment Instrument Issuers (third-party type)
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.fsa.go.jp/menkyo/menkyoj/daisan.pdf
+  category: Japanese third-party prepaid payment instrument issuer registration (Payment Services Act)
+  contract_reference:
+    register: Japan FSA registered Prepaid Payment Instrument Issuers (third-party type)
+    spec_file: null
+    standard: null
+    role: licensed-participant
+    registrations:
+    - registered_name: 株式会社Ｋｙａｓｈ
+      register_id: 関東財務局長 第00698号
+      corporate_number: '9011001103831'
+      register_country: JP
+      matched_domain: kyash.co
+      matched_by: domain
+      en_name: Kyash
+      registered: '2017-01-16'
+      identity: wikidata Q65229231 'Kyash' P3225 9011001103831 (the register's corporate number) P856 https://kyash.co
+    signal_note: 'participation only: a Financial Services Agency registration; no API conformance is published
+      by this register'
+    detected_by: sweep-japan-fsa-registered-fintech.py
+    detected: '2026-10-21'
+    identity_source: wikidata P3225 (the register's Japanese corporate number) -> P856 (labelled provenance step;
+      Kin 2026-10-15 decision 1)
+  detected_by: sweep-japan-fsa-registered-fintech.py
+  first_seen: '2026-10-21'
 generated: '2026-10-18'
 method: searched
 source:
-- https://api.nuget.org/v3
-- https://crates.io/api/v1
-- https://proxy.golang.org
-- https://pypi.org/pypi
 - https://registry.npmjs.org
-- https://repo1.maven.org/maven2
+- https://pypi.org/pypi
 - https://rubygems.org/api/v1
+- https://crates.io/api/v1
+- https://repo1.maven.org/maven2
+- https://api.nuget.org/v3
+- https://proxy.golang.org
 checked:
 - https://api.nuget.org/v3
 - https://crates.io/api/v1
@@ -56,3 +121,10 @@ checked:
 - https://registry.npmjs.org
 - https://repo1.maven.org/maven2
 - https://rubygems.org/api/v1
+- https://www.fsa.go.jp/en/regulated/licensed/denshikessaisyudan.pdf
+- https://www.fsa.go.jp/en/regulated/licensed/en_kasoutuka.pdf
+- https://www.fsa.go.jp/en/regulated/licensed/index.html
+- https://www.fsa.go.jp/menkyo/menkyoj/daisan.pdf
+- https://www.fsa.go.jp/menkyo/menkyoj/dendai.pdf
+- https://www.fsa.go.jp/menkyo/menkyoj/kasoutuka.pdf
+- https://www.fsa.go.jp/menkyo/menkyoj/shikin_idou.pdf
